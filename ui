@@ -1,0 +1,399 @@
+local PrisonLife = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local title = Instance.new("TextLabel")
+local OptionsFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local PlayerNameTextBox = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local KillPlayer = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local ArrestPlayer = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local KillaLL = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local ArrestCrims = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local teamchangetitle = Instance.new("TextLabel")
+local Inmates = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Police = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Neutral = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Criminals = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local GunsTitle = Instance.new("TextLabel")
+local ak47 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local m4a1 = Instance.new("TextButton")
+local remington = Instance.new("TextButton")
+local M9 = Instance.new("TextButton")
+local teleporttitle = Instance.new("TextLabel")
+local prison_tp = Instance.new("TextButton")
+local yard_tp = Instance.new("TextButton")
+local crimbase_tp = Instance.new("TextButton")
+local FrontPrison_tp = Instance.new("TextButton")
+local Otherstitle = Instance.new("TextLabel")
+local _1hit_punch = Instance.new("TextButton")
+local KillAura_button = Instance.new("TextButton")
+local info = Instance.new("TextButton")
+
+--Properties:
+
+PrisonLife.Name = "PrisonLife"
+PrisonLife.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+PrisonLife.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = PrisonLife
+MainFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.330882341, 0, 0.324758857, 0)
+MainFrame.Size = UDim2.new(0.338235289, 0, 0.348874599, 0)
+
+UICorner.CornerRadius = UDim.new(0.0250000004, 0)
+UICorner.Parent = MainFrame
+
+title.Name = "title"
+title.Parent = MainFrame
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Size = UDim2.new(1, 0, 0.0875576064, 0)
+title.Font = Enum.Font.SourceSansBold
+title.Text = "Prison Life"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+OptionsFrame.Name = "OptionsFrame"
+OptionsFrame.Parent = MainFrame
+OptionsFrame.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+OptionsFrame.BorderSizePixel = 0
+OptionsFrame.Position = UDim2.new(0.0195652172, 0, 0.115207374, 0)
+OptionsFrame.Size = UDim2.new(0.960869551, 0, 0.847926259, 0)
+
+UICorner_2.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_2.Parent = OptionsFrame
+
+ScrollingFrame.Parent = MainFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0195652172, 0, 0.115207374, 0)
+ScrollingFrame.Size = UDim2.new(0.960869551, 0, 0.847926259, 0)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 2.5, 0)
+ScrollingFrame.ScrollBarThickness = 6
+
+PlayerNameTextBox.Name = "PlayerNameTextBox"
+PlayerNameTextBox.Parent = ScrollingFrame
+PlayerNameTextBox.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+PlayerNameTextBox.BorderSizePixel = 0
+PlayerNameTextBox.Size = UDim2.new(1, 0, 0.0552486181, 0)
+PlayerNameTextBox.Font = Enum.Font.SourceSans
+PlayerNameTextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+PlayerNameTextBox.PlaceholderText = "Enter player name.."
+PlayerNameTextBox.Text = ""
+PlayerNameTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerNameTextBox.TextSize = 14.000
+
+UICorner_3.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_3.Parent = PlayerNameTextBox
+
+KillPlayer.Name = "KillPlayer"
+KillPlayer.Parent = ScrollingFrame
+KillPlayer.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+KillPlayer.BorderSizePixel = 0
+KillPlayer.Position = UDim2.new(0, 0, 0.0773480609, 0)
+KillPlayer.Size = UDim2.new(0, 215, 0, 21)
+KillPlayer.Font = Enum.Font.SourceSans
+KillPlayer.Text = "Kill (put players name in text above)"
+KillPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillPlayer.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_4.Parent = KillPlayer
+
+ArrestPlayer.Name = "ArrestPlayer"
+ArrestPlayer.Parent = ScrollingFrame
+ArrestPlayer.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+ArrestPlayer.BorderSizePixel = 0
+ArrestPlayer.Position = UDim2.new(0.514672697, 0, 0.0773480609, 0)
+ArrestPlayer.Size = UDim2.new(0, 215, 0, 21)
+ArrestPlayer.Font = Enum.Font.SourceSans
+ArrestPlayer.Text = "Arrest (put players name in text above)"
+ArrestPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+ArrestPlayer.TextSize = 14.000
+
+UICorner_5.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_5.Parent = ArrestPlayer
+
+KillaLL.Name = "KillaLL"
+KillaLL.Parent = ScrollingFrame
+KillaLL.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+KillaLL.BorderSizePixel = 0
+KillaLL.Position = UDim2.new(0, 0, 0.157458559, 0)
+KillaLL.Size = UDim2.new(0, 215, 0, 21)
+KillaLL.Font = Enum.Font.SourceSans
+KillaLL.Text = "Kill All"
+KillaLL.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillaLL.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_6.Parent = KillaLL
+
+ArrestCrims.Name = "ArrestCrims"
+ArrestCrims.Parent = ScrollingFrame
+ArrestCrims.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+ArrestCrims.BorderSizePixel = 0
+ArrestCrims.Position = UDim2.new(0.514672697, 0, 0.157458559, 0)
+ArrestCrims.Size = UDim2.new(0, 215, 0, 21)
+ArrestCrims.Font = Enum.Font.SourceSans
+ArrestCrims.Text = "Arrest Criminals"
+ArrestCrims.TextColor3 = Color3.fromRGB(255, 255, 255)
+ArrestCrims.TextSize = 14.000
+
+UICorner_7.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_7.Parent = ArrestCrims
+
+teamchangetitle.Name = "teamchangetitle"
+teamchangetitle.Parent = ScrollingFrame
+teamchangetitle.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+teamchangetitle.BorderSizePixel = 0
+teamchangetitle.Position = UDim2.new(0, 0, 0.228260875, 0)
+teamchangetitle.Size = UDim2.new(0, 442, 0, 16)
+teamchangetitle.Font = Enum.Font.SourceSans
+teamchangetitle.Text = "Team Change"
+teamchangetitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+teamchangetitle.TextScaled = true
+teamchangetitle.TextSize = 14.000
+teamchangetitle.TextWrapped = true
+
+Inmates.Name = "Inmates"
+Inmates.Parent = ScrollingFrame
+Inmates.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Inmates.BorderSizePixel = 0
+Inmates.Position = UDim2.new(0.512410223, 0, 0.294739366, 0)
+Inmates.Size = UDim2.new(0, 215, 0, 21)
+Inmates.Font = Enum.Font.SourceSans
+Inmates.Text = "Inmates"
+Inmates.TextColor3 = Color3.fromRGB(255, 255, 255)
+Inmates.TextSize = 14.000
+
+UICorner_8.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_8.Parent = Inmates
+
+Police.Name = "Police"
+Police.Parent = ScrollingFrame
+Police.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Police.BorderSizePixel = 0
+Police.Position = UDim2.new(-0.00116443634, 0, 0.294739366, 0)
+Police.Size = UDim2.new(0, 215, 0, 21)
+Police.Font = Enum.Font.SourceSans
+Police.Text = "Police"
+Police.TextColor3 = Color3.fromRGB(255, 255, 255)
+Police.TextSize = 14.000
+
+UICorner_9.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_9.Parent = Police
+
+Neutral.Name = "Neutral"
+Neutral.Parent = ScrollingFrame
+Neutral.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Neutral.BorderSizePixel = 0
+Neutral.Position = UDim2.new(-0.00116443634, 0, 0.370826304, 0)
+Neutral.Size = UDim2.new(0, 215, 0, 21)
+Neutral.Font = Enum.Font.SourceSans
+Neutral.Text = "Neutral"
+Neutral.TextColor3 = Color3.fromRGB(255, 255, 255)
+Neutral.TextSize = 14.000
+
+UICorner_10.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_10.Parent = Neutral
+
+Criminals.Name = "Criminals"
+Criminals.Parent = ScrollingFrame
+Criminals.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Criminals.BorderSizePixel = 0
+Criminals.Position = UDim2.new(0.512410223, 0, 0.370826304, 0)
+Criminals.Size = UDim2.new(0, 215, 0, 21)
+Criminals.Font = Enum.Font.SourceSans
+Criminals.Text = "Criminals"
+Criminals.TextColor3 = Color3.fromRGB(255, 255, 255)
+Criminals.TextSize = 14.000
+
+UICorner_11.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_11.Parent = Criminals
+
+GunsTitle.Name = "GunsTitle"
+GunsTitle.Parent = ScrollingFrame
+GunsTitle.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+GunsTitle.BorderSizePixel = 0
+GunsTitle.Position = UDim2.new(0, 0, 0.46097976, 0)
+GunsTitle.Size = UDim2.new(0, 442, 0, 16)
+GunsTitle.Font = Enum.Font.SourceSans
+GunsTitle.Text = "Guns"
+GunsTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+GunsTitle.TextScaled = true
+GunsTitle.TextSize = 14.000
+GunsTitle.TextWrapped = true
+
+ak47.Name = "ak-47"
+ak47.Parent = ScrollingFrame
+ak47.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+ak47.BorderSizePixel = 0
+ak47.Position = UDim2.new(-0.00116443634, 0, 0.513683438, 0)
+ak47.Size = UDim2.new(0, 215, 0, 21)
+ak47.Font = Enum.Font.SourceSans
+ak47.Text = "AK-47"
+ak47.TextColor3 = Color3.fromRGB(255, 255, 255)
+ak47.TextSize = 14.000
+
+UICorner_12.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_12.Parent = ak47
+
+m4a1.Name = "m4a1"
+m4a1.Parent = ScrollingFrame
+m4a1.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+m4a1.BorderSizePixel = 0
+m4a1.Position = UDim2.new(0.514672697, 0, 0.513683438, 0)
+m4a1.Size = UDim2.new(0, 215, 0, 21)
+m4a1.Font = Enum.Font.SourceSans
+m4a1.Text = "M4A1 (requires swat gamepass)"
+m4a1.TextColor3 = Color3.fromRGB(255, 255, 255)
+m4a1.TextSize = 14.000
+
+remington.Name = "remington"
+remington.Parent = ScrollingFrame
+remington.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+remington.BorderSizePixel = 0
+remington.Position = UDim2.new(0.514672697, 0, 0.580503702, 0)
+remington.Size = UDim2.new(0, 215, 0, 21)
+remington.Font = Enum.Font.SourceSans
+remington.Text = "Remington"
+remington.TextColor3 = Color3.fromRGB(255, 255, 255)
+remington.TextSize = 14.000
+
+M9.Name = "M9"
+M9.Parent = ScrollingFrame
+M9.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+M9.BorderSizePixel = 0
+M9.Position = UDim2.new(-0.00116443634, 0, 0.580503702, 0)
+M9.Size = UDim2.new(0, 215, 0, 21)
+M9.Font = Enum.Font.SourceSans
+M9.Text = "M9"
+M9.TextColor3 = Color3.fromRGB(255, 255, 255)
+M9.TextSize = 14.000
+
+teleporttitle.Name = "teleport title"
+teleporttitle.Parent = ScrollingFrame
+teleporttitle.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+teleporttitle.BorderSizePixel = 0
+teleporttitle.Position = UDim2.new(0, 0, 0.656832278, 0)
+teleporttitle.Size = UDim2.new(0, 442, 0, 16)
+teleporttitle.Font = Enum.Font.SourceSans
+teleporttitle.Text = "Teleport"
+teleporttitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+teleporttitle.TextScaled = true
+teleporttitle.TextSize = 14.000
+teleporttitle.TextWrapped = true
+
+prison_tp.Name = "prison_tp"
+prison_tp.Parent = ScrollingFrame
+prison_tp.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+prison_tp.BorderSizePixel = 0
+prison_tp.Position = UDim2.new(-0.00116443634, 0, 0.7210567, 0)
+prison_tp.Size = UDim2.new(0, 215, 0, 21)
+prison_tp.Font = Enum.Font.SourceSans
+prison_tp.Text = "Prison"
+prison_tp.TextColor3 = Color3.fromRGB(255, 255, 255)
+prison_tp.TextSize = 14.000
+
+yard_tp.Name = "yard_tp"
+yard_tp.Parent = ScrollingFrame
+yard_tp.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+yard_tp.BorderSizePixel = 0
+yard_tp.Position = UDim2.new(0.512410223, 0, 0.7210567, 0)
+yard_tp.Size = UDim2.new(0, 215, 0, 21)
+yard_tp.Font = Enum.Font.SourceSans
+yard_tp.Text = "Yard"
+yard_tp.TextColor3 = Color3.fromRGB(255, 255, 255)
+yard_tp.TextSize = 14.000
+
+crimbase_tp.Name = "crimbase_tp"
+crimbase_tp.Parent = ScrollingFrame
+crimbase_tp.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+crimbase_tp.BorderSizePixel = 0
+crimbase_tp.Position = UDim2.new(0.514672697, 0, 0.799397707, 0)
+crimbase_tp.Size = UDim2.new(0, 215, 0, 21)
+crimbase_tp.Font = Enum.Font.SourceSans
+crimbase_tp.Text = "Criminal Base"
+crimbase_tp.TextColor3 = Color3.fromRGB(255, 255, 255)
+crimbase_tp.TextSize = 14.000
+
+FrontPrison_tp.Name = "FrontPrison_tp"
+FrontPrison_tp.Parent = ScrollingFrame
+FrontPrison_tp.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+FrontPrison_tp.BorderSizePixel = 0
+FrontPrison_tp.Position = UDim2.new(-0.00116443634, 0, 0.799397707, 0)
+FrontPrison_tp.Size = UDim2.new(0, 215, 0, 21)
+FrontPrison_tp.Font = Enum.Font.SourceSans
+FrontPrison_tp.Text = "Front of prison"
+FrontPrison_tp.TextColor3 = Color3.fromRGB(255, 255, 255)
+FrontPrison_tp.TextSize = 14.000
+
+Otherstitle.Name = "Others title"
+Otherstitle.Parent = ScrollingFrame
+Otherstitle.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Otherstitle.BorderSizePixel = 0
+Otherstitle.Position = UDim2.new(-0.00226244354, 0, 0.875726283, 0)
+Otherstitle.Size = UDim2.new(0, 442, 0, 16)
+Otherstitle.Font = Enum.Font.SourceSans
+Otherstitle.Text = "Others"
+Otherstitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Otherstitle.TextScaled = true
+Otherstitle.TextSize = 14.000
+Otherstitle.TextWrapped = true
+
+_1hit_punch.Name = "1hit_punch"
+_1hit_punch.Parent = ScrollingFrame
+_1hit_punch.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+_1hit_punch.BorderSizePixel = 0
+_1hit_punch.Position = UDim2.new(0.514672697, 0, 0.921617687, 0)
+_1hit_punch.Size = UDim2.new(0, 215, 0, 21)
+_1hit_punch.Font = Enum.Font.SourceSans
+_1hit_punch.Text = "1 Hit Punch"
+_1hit_punch.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1hit_punch.TextSize = 14.000
+_1hit_punch.TextWrapped = true
+
+KillAura_button.Name = "KillAura_button"
+KillAura_button.Parent = ScrollingFrame
+KillAura_button.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+KillAura_button.BorderSizePixel = 0
+KillAura_button.Position = UDim2.new(-0.00116443634, 0, 0.921617687, 0)
+KillAura_button.Size = UDim2.new(0, 215, 0, 21)
+KillAura_button.Font = Enum.Font.SourceSans
+KillAura_button.Text = "Kill Aura"
+KillAura_button.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillAura_button.TextSize = 14.000
+KillAura_button.TextWrapped = true
+
+info.Name = "info"
+info.Parent = ScrollingFrame
+info.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+info.BackgroundTransparency = 1.000
+info.BorderSizePixel = 0
+info.Position = UDim2.new(-0.00342680654, 0, 0.98048681, 0)
+info.Size = UDim2.new(0, 442, 0, 10)
+info.Font = Enum.Font.SourceSans
+info.Text = "info and shit"
+info.TextColor3 = Color3.fromRGB(255, 255, 255)
+info.TextSize = 14.000
+info.TextWrapped = true
+info.TextYAlignment = Enum.TextYAlignment.Bottom
+
+
